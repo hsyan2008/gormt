@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"io/ioutil"
 
+	"github.com/hsyan2008/hfw/common"
 	"github.com/xxjwxc/public/dev"
-	"github.com/xxjwxc/public/tools"
 	"gopkg.in/yaml.v2"
 )
 
@@ -26,7 +26,7 @@ func init() {
 }
 
 func onInit() {
-	path := tools.GetModelPath()
+	path := common.GetAppPath()
 	err := InitFile(path + "/config.yml")
 	if err != nil {
 		fmt.Println("InitFile: ", err.Error())

@@ -78,11 +78,11 @@ func (m *_Model) genTableElement(cols []ColumusInfo) (el []genstruct.GenElement)
 
 		// json tag
 		if config.GetIsJSONTag() {
-			if strings.EqualFold(v.Name, "id") {
-				tmp.AddTag(_tagJSON, "-")
-			} else if len(v.Name) > 0 {
-				tmp.AddTag(_tagJSON, v.Name)
-			}
+			// if strings.EqualFold(v.Name, "id") {
+			// 	tmp.AddTag(_tagJSON, "-")
+			// } else if len(v.Name) > 0 {
+			tmp.AddTag(_tagJSON, v.Name)
+			// }
 		}
 		el = append(el, tmp)
 
