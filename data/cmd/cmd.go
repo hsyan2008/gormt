@@ -6,9 +6,9 @@ import (
 
 	"github.com/xxjwxc/public/tools"
 
-	"github.com/xxjwxc/gormt/data/view/gtools"
+	"github.com/hsyan2008/gormt/data/view/gtools"
 
-	"github.com/xxjwxc/gormt/data/config"
+	"github.com/hsyan2008/gormt/data/config"
 
 	"github.com/spf13/cobra"
 	"gopkg.in/go-playground/validator.v9"

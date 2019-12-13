@@ -1,14 +1,12 @@
-base:
-    is_dev : false
-out_dir : ./model  # 输出目录
-singular_table : false  # 单表模式:true:禁用表名复数,false:采用表明复数 参考:gorm.SingularTable
-simple : false # 简单输出(默认gorm标签不输出)
+out_dir : "/home/saxon/Dropbox/workspace/go/src/xforwardai/xfat_api/models"  # 输出目录
+singular_table : false  # 表名复数,是否大驼峰构建 参考:gorm.SingularTable
+simple : false #简单输出，就是包含gorm.Model
 is_out_sql : false # 是否输出 sql 原信息
-is_json_tag : true # 是否打json标记
-is_foreign_key : true # 是否导出外键关联
-mysql_info:
-    host : 127.0.0.1
+is_json_tag : true #是否打json标记
+is_foreign_key : false #是否导出外键关联
+mysql_info :
+    host : "172.16.3.55"
     port : 3306
-    username : root
-    password : qwer
-    database : oauth_db
+    username : "devuser"
+    password : "devuser"
+    database : "xfat"

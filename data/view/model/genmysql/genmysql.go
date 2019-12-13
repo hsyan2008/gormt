@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/xxjwxc/gormt/data/config"
-	"github.com/xxjwxc/gormt/data/view/model"
+	"github.com/hsyan2008/gormt/data/config"
+	"github.com/hsyan2008/gormt/data/view/model"
 	"github.com/xxjwxc/public/mysqldb"
 	"github.com/xxjwxc/public/tools"
 )

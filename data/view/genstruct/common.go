@@ -5,9 +5,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/xxjwxc/gormt/data/config"
-	"github.com/xxjwxc/gormt/data/view/cnf"
-	"github.com/xxjwxc/gormt/data/view/generate"
+	"github.com/hsyan2008/gormt/data/config"
+	"github.com/hsyan2008/gormt/data/view/cnf"
+	"github.com/hsyan2008/gormt/data/view/generate"
 )
 
 // SetName Setting element name.设置元素名字
@@ -109,6 +109,10 @@ func (s *GenStruct) Generates() []string {
 	for _, v := range s.Em {
 		p.Add(v.Generate())
 	}
+	p.Add("}")
+
+	p.Add("func (", s.Name, ") TableName() string {")
+	p.Add(fmt.Sprintf("return `%s`", s.TableName))
 	p.Add("}")
 
 	return p.Generates()

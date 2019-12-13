@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/xxjwxc/gormt/data/config"
-	"github.com/xxjwxc/gormt/data/view/cnf"
+	"github.com/hsyan2008/gormt/data/config"
+	"github.com/hsyan2008/gormt/data/view/cnf"
 	"github.com/xxjwxc/public/mybigcamel"
 )
 
@@ -44,5 +44,5 @@ func getTypeName(name string) string {
 		}
 	}
 
-	panic(fmt.Sprintf("type (%v) not match in any way.maybe need to add on (https://github.com/xxjwxc/gormt/blob/master/data/view/cnf/def.go)", name))
+	panic(fmt.Sprintf("type (%v) not match in any way.maybe need to add on (https://github.com/hsyan2008/gormt/blob/master/data/view/cnf/def.go)", name))
 }

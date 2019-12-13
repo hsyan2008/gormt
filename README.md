@@ -1,7 +1,9 @@
 
-# [gormt](https://github.com/xxjwxc/gormt)
+# [gormt](https://github.com/hsyan2008/gormt)
 
 ## [中文文档](README_zh_cn.md)
+
+### fork from [gormt](https://github.com/xxjwxc/gormt)
 
 ###  mysql database to goang struct conversion tools base on [gorm](https://github.com/jinzhu/gorm)，You can automatically generate golang sturct from MySQL database.
 
@@ -141,7 +143,7 @@ go generate
 
 ![4](/image/gormt/4.jpg)
 
-[Download](https://github.com/xxjwxc/gormt/releases/download/v1.1.0/v1.0.zip)
+[Download](https://github.com/hsyan2008/gormt/releases/download/v1.1.0/v1.0.zip)
 
 
 

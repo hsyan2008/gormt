@@ -3,8 +3,8 @@ package model
 import (
 	"strings"
 
-	"github.com/xxjwxc/gormt/data/config"
-	"github.com/xxjwxc/gormt/data/view/genstruct"
+	"github.com/hsyan2008/gormt/data/config"
+	"github.com/hsyan2008/gormt/data/view/genstruct"
 )
 
 type _Model struct {
@@ -24,6 +24,7 @@ func (m *_Model) generate() string {
 	pkg.SetPackage(m.info.PackageName) //package name
 	for _, tab := range m.info.TabList {
 		var sct genstruct.GenStruct
+		sct.TableName = tab.Name
 		sct.SetStructName(getCamelName(tab.Name)) // Big hump.大驼峰
 		sct.SetNotes(tab.Notes)
 		sct.AddElement(m.genTableElement(tab.Em)...) // build element.构造元素
